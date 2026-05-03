@@ -6,12 +6,12 @@
 
   <!-- ═══════════════════════════════════════
        SEO META TAGS — OPTIMISÉ LANCEMENT JUILLET 2025
-       Marché France · Espagne · Belgique · Suisse
+       Marché France · Espagne · Belgique · Suisse + UE
   ════════════════════════════════════════ -->
   <title>Lucuma Market – Importateur Européen de Lucuma | Poudre, Purée & Fruit Frais du Pérou</title>
-  <meta name="description" content="Lucuma Market est le spécialiste de l'importation de lucuma du Pérou vers l'Europe. Poudre, purée surgelée, fruit frais et concentré. Livraison France, Espagne, Belgique, Suisse. B2B & épiceries fines.">
+  <meta name="description" content="Lucuma Market est le spécialiste de l'importation de lucuma du Pérou vers l'Europe. Poudre, purée surgelée, fruit frais et concentré. Livraison France, Espagne, Belgique, Suisse et toute l'UE. B2B & épiceries fines.">
   <meta name="keywords" content="lucuma, lucuma poudre, lucuma europe, acheter lucuma, importer lucuma, superfruit pérou, lucuma france, lucuma belgique, lucuma suisse, lucuma espagne, poudre de lucuma bio, superfood inca, lucuma B2B, lucuma grossiste, or des incas, lucuma prix, lucuma purée, fruit andin">
-  <meta name="author" content="Hudson Business Development – Cyril Ragonet">
+  <meta name="author" content="Hudson Business Development">
   <meta name="robots" content="index, follow">
   <meta name="language" content="fr">
   <link rel="canonical" href="https://www.lucuma-market.com/">
@@ -20,7 +20,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.lucuma-market.com/">
   <meta property="og:title" content="Lucuma Market – L'Or des Andes en Europe">
-  <meta property="og:description" content="Premier importateur spécialisé de lucuma du Pérou vers la France, l'Espagne, la Belgique et la Suisse. Poudre, purée, fruit frais. B2B & retail.">
+  <meta property="og:description" content="Premier importateur spécialisé de lucuma du Pérou vers la France, l'Espagne, la Belgique, la Suisse et l'Union Européenne. Poudre, purée, fruit frais. B2B & retail.">
   <meta property="og:image" content="https://www.lucuma-market.com/lucuma.png">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:site_name" content="Lucuma Market">
@@ -28,7 +28,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Lucuma Market – Superfruit des Andes en Europe">
-  <meta name="twitter:description" content="Importateur spécialisé de lucuma péruvien. Poudre, purée, fruit frais. Livraison France, Espagne, Belgique, Suisse.">
+  <meta name="twitter:description" content="Importateur spécialisé de lucuma péruvien. Poudre, purée, fruit frais. Livraison France, Espagne, Belgique, Suisse et UE.">
   <meta name="twitter:image" content="https://www.lucuma-market.com/lucuma.png">
 
   <!-- Geo targeting -->
@@ -43,14 +43,14 @@
     "name": "Lucuma Market",
     "url": "https://www.lucuma-market.com",
     "logo": "https://www.lucuma-market.com/logo.png",
-    "description": "Importateur européen spécialisé dans la lucuma du Pérou. Poudre, purée surgelée, fruit frais, concentré liquide.",
+    "description": "Importateur européen spécialisé dans la lucuma du Pérou. Poudre, purée surgelée, fruit frais, concentré liquide. Distribution France, Espagne, Belgique, Suisse et Union Européenne.",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+33-6-95-35-83-83",
       "contactType": "sales",
       "availableLanguage": ["French", "Spanish", "English"]
     },
-    "areaServed": ["FR", "ES", "BE", "CH"],
+    "areaServed": ["FR", "ES", "BE", "CH", "EU"],
     "sameAs": [],
     "founder": {
       "@type": "Person",
@@ -594,26 +594,21 @@
     }
     .targets-header p { font-size: .95rem; color: var(--gris); max-width: 540px; margin: 0 auto; line-height: 1.7; }
 
-    .targets-tabs {
-      display: flex; justify-content: center; gap: 4px;
-      margin-bottom: 48px;
+    .targets-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
     }
-    .tab-btn {
-      padding: 10px 24px;
-      border: 1.5px solid var(--gris-l);
-      background: transparent;
-      border-radius: var(--radius);
-      font-size: .8rem;
-      font-weight: 600;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      color: var(--gris);
-      cursor: pointer;
+    .target-card {
+      background: var(--blanc);
+      border: 1px solid var(--gris-l);
+      border-radius: 4px;
+      padding: 36px 28px;
       transition: all var(--trans);
-      font-family: 'DM Sans', sans-serif;
+      position: relative; overflow: hidden;
     }
-    .tab-btn.active, .tab-btn:hover {
-      background: var(--or); border-color: var(--or); color: var(--blanc);
-    }
-
-    .targ
+    .target-card::before {
+      content: ''; position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: var(--or);
+      transform: scaleX(0); transform-origin: left;
+   
